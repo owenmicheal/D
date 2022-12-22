@@ -99,7 +99,7 @@
                             </p>
                             <div class="carousel-btn">
                                 <a class="btn btn-custom" href="tel://+256751837332">contact Us</a>
-                                <a class="btn btn-custom" href="https://api.whatsapp.com/send?phone= 256704705834&text=hey%20there">Whatsapp Us</a>
+                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
                             </div>
                         </div>
                     </div>
@@ -470,9 +470,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-newsletter">
-                            <h2>Newsletter</h2>
+                            <h2>Message Us</h2>
                             <form>
-                                <input class="form-control" placeholder="Email goes here">
+                                <input class="form-control" placeholder="Message goes here">
                                 <button class="btn btn-custom">Submit</button>
                                 <label>For better lives!</label>
                             </form>
@@ -486,7 +486,7 @@
                         <p>&copy; <a href="#">Da'Brich International Limited</a>, All Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
-                        <p>Designed By <a href="https://owenmicheal.github.io/.../">Micheal Owen</a></p>
+                        <p>Designed By <a href="https://owenmicheal.github.io/-/">Micheal Owen</a></p>
                     </div>
                 </div>
             </div>
@@ -516,6 +516,47 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <!--Whatsaap Button starts here-->
+
+        <script>
+            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?30689';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var options = {
+          "enabled":true,
+          "chatButtonSetting":{
+              "backgroundColor":"#4dc247",
+              "ctaText":"",
+              "borderRadius":"25",
+              "marginLeft":"15",
+              "marginBottom":"10",
+              "marginRight":"50",
+              "position":"left"
+          },
+          "brandSetting":{
+              "brandName":"Da'Brich International",
+              "brandSubTitle":"Typically replies instantly",
+              "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+              "welcomeText":"Hi there!\nHow can I help you?",
+              "messageText":"Hello, I have a question about Da'Brich International Limited.",
+              "backgroundColor":"#0a5f54",
+              "ctaText":"Start Chat",
+              "borderRadius":"25",
+              "autoShow":false,
+              "phoneNumber":"256751837332"
+          }
+        };
+            s.onload = function() {
+                CreateWhatsappChatWidget(options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        </script>
+
+        <!--whatsaap button ends here-->
+
     </body>
 </html>
-<!--<a href="tel://+256751837332">-->

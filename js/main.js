@@ -53,7 +53,7 @@
     });
 
     
-    // Main carousel
+    // Main carousel(The arrows and and sliding images)
     $(".carousel .owl-carousel").owlCarousel({
         autoplay: true,
         animateOut: 'fadeOut',
@@ -70,7 +70,7 @@
     });
     
     
-    // Modal Video
+    // Modal Video(Video Js code)
     $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
